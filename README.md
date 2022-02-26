@@ -8,4 +8,4 @@ $ flutter run # run flutter
 
 ### 💻 레이아웃 만들기 예제
 [레이아웃 만들기 샘플코드](./lib/src/widgets/layout_sample.dart) | 
-[레이아웃 만들기 튵토리얼](https://flutter-ko.dev/docs/development/ui/layout/tutorial)
+[레이아웃 만들기 튜토리얼](https://flutter-ko.dev/docs/development/ui/layout/tutorial)
