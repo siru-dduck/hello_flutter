@@ -5,6 +5,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import 'package:hello_flutter/src/widgets/layout_sample.dart';
+
 void main() async {
   String name = "SiruDDuck!";
   // var name = "문자열 추론이 가능하다구~";
@@ -26,7 +28,9 @@ void main() async {
     print(err);
   }
 
-  runApp(const MyCupertinoApp());
+  // runApp(const MyCupertinoApp()); // Cupertino(like IOS) 스타일 앱 실행
+  // runApp(const MyApp()); // Materia(like Android, Google) 스타일 앱 실행
+  runApp(LayoutSample());
 }
 
 class MyCupertinoApp extends StatelessWidget {
