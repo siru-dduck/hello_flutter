@@ -15,7 +15,7 @@ void main() async {
   int nameLen = printMyname(name + "!!");
   print(nameLen);
 
-  final APIModule apiModule = new APIModule();
+  final APIModule apiModule = APIModule();
   apiModule
       .getIpAddress()
       .then((ip) => print("My Ip is " + ip))
@@ -27,7 +27,7 @@ void main() async {
   } catch (err) {
     print(err);
   }
-
+  
   // runApp(const MyCupertinoApp()); // Cupertino(like IOS) 스타일 앱 실행
   // runApp(const MyApp()); // Materia(like Android, Google) 스타일 앱 실행
   runApp(LayoutSample());
