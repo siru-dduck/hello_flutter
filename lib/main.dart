@@ -32,7 +32,7 @@ void main() async {
   // runApp(const MyCupertinoApp()); // Cupertino(like IOS) 스타일 앱 실행
   // runApp(const MyApp()); // Materia(like Android, Google) 스타일 앱 실행
   // runApp(LayoutSample());
-  runApp(LogoApp());
+  runApp(const LogoApp());
 }
 
 class MyCupertinoApp extends StatelessWidget {
@@ -58,10 +58,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: "Hello Flutter",
-        home: Scaffold(
-            appBar: AppBar(title: Text("Welcome to First App bar")),
-            body: Center(child: Text("Hello World"))));
+      title: "Hello Flutter",
+      home: Scaffold(
+        appBar: AppBar(title: Text("Welcome to First App bar")),
+        body: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Icon(Icons.star),
+          Icon(Icons.star),
+          Icon(Icons.star),
+        ]),
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.phone), label: 'phone'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.message), label: 'message'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.contact_page), label: 'contact')
+          ],
+        ),
+      ),
+    );
   }
 }
 
