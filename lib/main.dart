@@ -3,6 +3,7 @@ import 'dart:convert';
 // import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/src/app/logo-app.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:hello_flutter/src/widgets/layout_sample.dart';
@@ -27,10 +28,11 @@ void main() async {
   } catch (err) {
     print(err);
   }
-  
+
   // runApp(const MyCupertinoApp()); // Cupertino(like IOS) 스타일 앱 실행
   // runApp(const MyApp()); // Materia(like Android, Google) 스타일 앱 실행
-  runApp(LayoutSample());
+  // runApp(LayoutSample());
+  runApp(LogoApp());
 }
 
 class MyCupertinoApp extends StatelessWidget {
